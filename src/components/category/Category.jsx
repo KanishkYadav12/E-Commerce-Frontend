@@ -1,4 +1,3 @@
-// category
 const category = [
   {
     image: "https://cdn-icons-png.flaticon.com/256/4359/4359963.png",
@@ -6,7 +5,7 @@ const category = [
   },
   {
     image: "https://cdn-icons-png.flaticon.com/256/11833/11833323.png",
-    name: "shirt",
+    name: "shirts",
   },
   {
     image: "https://cdn-icons-png.flaticon.com/256/8174/8174424.png",
@@ -39,7 +38,10 @@ const Category = () => {
     <div>
       <div className="sticky top-0 flex flex-wrap justify-center gap-6 p-6 bg-gray-100">
         {category.map((item, index) => (
-          <div key={index} className="flex flex-col items-center w-1/4 p-4 space-y-4 bg-white rounded-lg shadow-lg">
+          <div
+            key={index}
+            className="flex flex-col items-center w-1/4 p-4 space-y-4 bg-white rounded-lg shadow-lg"
+          >
             {/* Image container */}
             <div className="relative flex items-center justify-center w-24 h-24 bg-pink-500 rounded-full">
               <img
